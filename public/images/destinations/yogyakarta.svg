@@ -1,0 +1,22 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#f5ede1"/>
+<circle cx="150" cy="140" r="70" fill="#eab04f" opacity="0.85"/>
+<path d="M0 460 L800 460 L800 600 L0 600 Z" fill="#123262" opacity="0.15"/>
+<g transform="translate(400,180)">
+<rect x="-70" y="260" width="140" height="30" fill="#0a1a33"/>
+<rect x="-55" y="220" width="110" height="40" fill="#0d2447"/>
+<rect x="-42" y="180" width="84" height="40" fill="#123262"/>
+<rect x="-30" y="145" width="60" height="35" fill="#1b4180"/>
+<rect x="-18" y="112" width="36" height="33" fill="#123262"/>
+<polygon points="0,80 -20,112 20,112" fill="#0d2447"/>
+<rect x="-4" y="55" width="8" height="30" fill="#0a1a33"/>
+<circle cx="0" cy="50" r="7" fill="#dd9633"/>
+</g>
+<g transform="translate(600,240)" opacity="0.8">
+<rect x="-40" y="150" width="80" height="20" fill="#123262"/>
+<rect x="-28" y="120" width="56" height="30" fill="#1b4180"/>
+<rect x="-16" y="92" width="32" height="28" fill="#123262"/>
+<polygon points="0,68 -14,92 14,92" fill="#0d2447"/>
+</g>
+<path d="M0 560 Q200 540 400 560 T800 560 L800 600 L0 600 Z" fill="#c8791f" opacity="0.7"/>
+</svg>

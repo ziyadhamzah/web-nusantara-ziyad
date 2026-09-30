@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#f5ede1"/>
+<circle cx="620" cy="150" r="90" fill="#eab04f"/>
+<rect y="0" width="800" height="600" fill="url(#skyfade)"/>
+<defs>
+<linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#eab04f" stop-opacity="0.25"/>
+<stop offset="0.55" stop-color="#f5ede1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<path d="M0 420 L120 340 L180 400 L260 320 L340 410 L420 350 L520 420 L620 360 L720 415 L800 380 L800 600 L0 600 Z" fill="#1b4180" opacity="0.25"/>
+<path d="M0 470 L100 410 L200 460 L300 400 L420 470 L540 420 L660 470 L800 430 L800 600 L0 600 Z" fill="#123262" opacity="0.55"/>
+<g transform="translate(90,300)">
+<rect x="-6" y="120" width="12" height="90" fill="#0a1a33"/>
+<polygon points="0,0 -55,60 55,60" fill="#0d2447"/>
+<polygon points="0,25 -45,80 45,80" fill="#123262"/>
+<polygon points="0,50 -35,100 35,100" fill="#1b4180"/>
+</g>
+<g transform="translate(190,320)">
+<rect x="-5" y="100" width="10" height="80" fill="#0a1a33"/>
+<polygon points="0,0 -45,50 45,50" fill="#0d2447"/>
+<polygon points="0,20 -38,65 38,65" fill="#123262"/>
+</g>
+<path d="M0 500 Q200 470 400 500 T800 500 L800 600 L0 600 Z" fill="#dd9633" opacity="0.9"/>
+<path d="M0 530 Q200 505 400 530 T800 530 L800 600 L0 600 Z" fill="#c8791f"/>
+</svg>

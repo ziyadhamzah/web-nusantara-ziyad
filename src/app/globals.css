@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --navy-950: #071a35;
+  --navy-900: #0a2244;
+  --navy-800: #10305f;
+  --navy-700: #1b4180;
+  --gold-600: #d9711a;
+  --gold-500: #f0872a;
+  --gold-400: #f7b93e;
+  --cream-50: #f6f1e8;
+  --cream-100: #ece4d4;
+  --ink-900: #14202f;
+  --ink-600: #4d5866;
+}
+
+@theme inline {
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-gold-600: var(--gold-600);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-ink-900: var(--ink-900);
+  --color-ink-600: var(--ink-600);
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream-50);
+  color: var(--ink-900);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.02;
+}
+
+::selection { background: var(--gold-400); color: var(--navy-950); }
+
+:focus-visible { outline: 2px solid var(--gold-400); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- Efek premium (halus & hemat performa) ---------- */
+@keyframes kenburns { from { transform: scale(1.02); } to { transform: scale(1.14); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.kenburns { animation: kenburns 26s ease-out forwards; will-change: transform; }
+.hero-in { animation: fadeUp 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0ms); }
+
+.grain::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.16; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1); transition-delay: var(--d, 0ms); }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+.btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+.btn-shine::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; transform: translateX(-120%) skewX(-20deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transition: transform 0.8s ease;
+}
+.btn-shine:hover::before { transform: translateX(120%) skewX(-20deg); }
+
+.marquee-track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.text-outline { color: transparent; -webkit-text-stroke: 1.5px var(--navy-900); }
+.gold-line { height: 3px; background: linear-gradient(90deg, var(--gold-500), var(--gold-400), transparent); }

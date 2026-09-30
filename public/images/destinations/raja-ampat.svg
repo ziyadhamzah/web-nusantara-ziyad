@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#e9f2f1"/>
+<rect y="0" width="800" height="380" fill="#dff3f0"/>
+<rect y="380" width="800" height="220" fill="#1b7f8c"/>
+<rect y="380" width="800" height="30" fill="#3fa9b5" opacity="0.6"/>
+<g fill="#123262">
+<ellipse cx="120" cy="330" rx="55" ry="70"/>
+<ellipse cx="210" cy="350" rx="35" ry="45"/>
+<ellipse cx="500" cy="320" rx="70" ry="85"/>
+<ellipse cx="610" cy="345" rx="40" ry="50"/>
+<ellipse cx="700" cy="330" rx="30" ry="40"/>
+</g>
+<g fill="#0d2447" opacity="0.9">
+<ellipse cx="120" cy="330" rx="40" ry="52"/>
+<ellipse cx="500" cy="320" rx="52" ry="63"/>
+</g>
+<circle cx="660" cy="110" r="55" fill="#eab04f"/>
+<path d="M0 470 Q200 450 400 470 T800 470" stroke="#f5ede1" stroke-opacity="0.3" stroke-width="10" fill="none"/>
+</svg>
