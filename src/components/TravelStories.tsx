@@ -17,7 +17,7 @@ export default function TravelStories() {
       <div className="shell">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
-            eyebrow="Travel stories"
+            pill="Travel stories"
             title="Catatan dari"
             accent="perjalanan kami"
             intro="Pengalaman lapangan yang kami tukar jadi tulisan, supaya rinciannya terasa sebelum berangkat."

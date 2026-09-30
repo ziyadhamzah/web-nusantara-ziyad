@@ -19,7 +19,7 @@ export default function Transportation() {
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <SectionHeading
             light
-            eyebrow="Getting around"
+            pill="Getting around"
             title="Cara menuju"
             accent="tujuan kamu"
             intro="Setiap tujuan punya pilihan berbeda. Ini yang kami pakai agar ritme perjalanan tetap nyaman."
